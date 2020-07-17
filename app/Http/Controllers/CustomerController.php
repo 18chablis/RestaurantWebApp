@@ -15,6 +15,7 @@ class CustomerController extends Controller
      */
     public function index()
     {
+
         $customers = DB::table('addresses')
                     ->join('customers', 'customers.address_id', '=', 'addresses.id')
                     ->get();

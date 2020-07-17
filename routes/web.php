@@ -25,7 +25,7 @@ Route::get('/index', function () {
 // Route::get('/contacts', 'ContactController@index');
 
 // Route::get('view-record','ContactController@index');
-// Route::resource('dish', 'DishController');
+Route::resource('dish', 'DishController');
 Route::resource('customer', 'CustomerController');
 // Route::resource('orders', 'OrderController');
 
